@@ -1,2 +1,3 @@
 # kanji-sensei-web
-Web for Kanji Sensei
+Web for the Kanji Sensei app.
+Visit [https://kanjisensei.app] for more info.

@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #FFF;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #4897dc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #CCC;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-self: center;
+    min-width: 600px;
+    max-width: 930px;
+    width: 80%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    height: 45px;
+    background-color: #000;
+    box-shadow: 0px 5px 10px #000;
+    margin-bottom: 5px;
+}
+
+header nav {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.main-menu, .secondary-menu {
+    padding: 0;
+}
+
+.main-menu li, .secondary-menu li {
+    display: inline;
+    list-style: none;
+}
+
+.main-menu li a, .secondary-menu li a {
+    color: #FFF;
+}
+
+.logo {
+    border-radius: 10px 10px 0px 0px;
+    max-width: 930px;
+    height: 200px;
+    background-image: url('./img/logo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-items: center;
+    padding: 10px;
+    background-color: #111;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+}
+
+section p {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.about-features, .about-screenshots {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+figure {
+    flex: 1;
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+figure figcaption {
+    font-size: 0.8rem;
+    color: #CCC;
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.disclaimer {
+    margin: 10px;
+    padding: 10px;
+    background-color: #2b353a;
+    border: 1px solid #0f1c23;
+}
+
+.disclaimer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.download-testflight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-testflight img {
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 0.8rem;
+}
