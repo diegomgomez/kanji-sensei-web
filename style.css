@@ -75,7 +75,7 @@ main {
     flex: 1;
     flex-direction: column;
     justify-items: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #111;
 }
 
@@ -93,7 +93,7 @@ section p {
     color: #FFF;
 }
 
-.faq-section h3 a:hover::after {
+.faq-section h3:hover::after {
     content: ' #';
 }
 
@@ -125,10 +125,10 @@ figure img {
 }
 
 .disclaimer {
-    margin: 10px;
     padding: 10px;
     background-color: #2b353a;
     border: 1px solid #0f1c23;
+    border-radius: 10px;
 }
 
 .disclaimer p {

@@ -165,7 +165,9 @@
             Array
                 .from(document.getElementsByClassName('menu-option'))
                 .forEach(element => {
-                    if (element.attributes['href'].value == hash) {
+                    if (element.attributes['href'].value == "#faq" && hash.startsWith("#faq")) {
+                        element.style['text-decoration'] = 'underline';
+                    } else if (element.attributes['href'].value == hash) {
                         element.style['text-decoration'] = 'underline';
                     } else {
                         element.style['text-decoration'] = '';
