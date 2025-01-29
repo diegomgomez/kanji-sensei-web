@@ -89,6 +89,14 @@ section p {
     padding-left: 10px;
 }
 
+.faq-section h3 a {
+    color: #FFF;
+}
+
+.faq-section h3 a:hover::after {
+    content: ' #';
+}
+
 .about-features, .about-screenshots {
     display: flex;
     flex-direction: row;
