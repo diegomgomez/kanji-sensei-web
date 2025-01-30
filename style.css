@@ -16,8 +16,13 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
+p, ul {
     color: #CCC;
+}
+
+li {
+    list-style: disc;
+    padding-left: 5px;
 }
 
 .container {
@@ -87,6 +92,12 @@ section:not(:last-of-type) {
 section p {
     text-align: justify;
     padding-left: 10px;
+}
+
+.kai-section img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .faq-section h3 a {
