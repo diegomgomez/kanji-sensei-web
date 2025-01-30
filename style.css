@@ -66,6 +66,10 @@ header nav {
     color: #FFF;
 }
 
+.secondary-menu {
+    display: none;
+}
+
 .logo {
     border-radius: 10px 10px 0px 0px;
     max-width: 930px;
