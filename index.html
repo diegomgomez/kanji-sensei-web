@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Kanji learning app to learn kanji easily from English to Japanese with kanji reading and practice" />
+    <meta name="description"
+      content="Kanji learning app to learn kanji easily from English to Japanese with kanji reading and practice" />
     <meta property="og:title" content="Kanji Sensei - Learn kanji easily" />
     <meta property="og:description" content="Learn to read, write, and interpret kanji easily on your phone" />
     <meta property="og:image" content="//kanjisensei.app/img/og-thumbnail.png" />
@@ -14,247 +15,292 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
+
   <body>
     <div class="container">
-        <header>
-            <nav>
-                <menu class="main-menu">
-                    <li><a class="menu-option" href="">HOME</a> | </li>
-                    <li><a class="menu-option" href="#about">ABOUT</a> | </li>
-                    <li><a class="menu-option" href="#download">DOWNLOAD</a> | </li>
-                    <li><a class="menu-option" href="#kai">KAI</a> | </li>
-                    <li><a class="menu-option" href="#faq">FAQ</a> | </li>
-                    <li><a class="menu-option" href="./privacy/index.html">PRIVACY</a> | </li>
-                    <li><a class="menu-option" href="#contact">CONTACT</a></li>
-                </menu>
-                <menu id="lang-menu" class="secondary-menu">
-                    <li><a id="lang-en" class="lang-option" onclick="updateLanguage('en')">English</a> | </li>
-                    <li><a id="lang-sp" class="lang-option" onclick="updateLanguage('sp')">Español</a> | </li>
-                    <li><a id="lang-jp" class="lang-option" onclick="updateLanguage('jp')">日本語</a></li>
-                </menu>
-            </nav>
-        </header>
-        <div class="logo"></div>
-        <main>
-            <section id="about" class="about-section">
-                <h2>About</h2>
-                <p>
-                    Kanji Sensei is a smartphone app that helps you learn kanji and vocabulary easily. No need to
-                    search and download decks online.
-                    Kanji sensei offers kanji writing practice with stroke recognition, kanji reading in context (within
-                    words), meaning, and kanji extended info out of the box.
-                </p>
-                <div class="about-features">
-                    <figure>
-                        <img src="./img/section-kakikata.png" alt="Kanji practice feature image" />
-                        <figcaption>
-                            Practice kanji writing with stroke recognition.
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/section-yomikata.png" alt="Kanji reading feature image" />
-                        <figcaption>
-                            Read kanjis within words - in context.
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/section-imi.png" alt="Kanji info feature image" />
-                        <figcaption>
-                            Learn about the meaning(s) of kanji, and information about which parts conform it.
-                        </figcaption>
-                    </figure>
-                </div>
-                <p>
-                    The app is currently in pre-beta and under heavy development. Please help testing it while learning
-                    japanese!
-                </p>
-                <div class="about-screenshots">
-                    <figure>
-                        <a href="./img/screenshot-1.png"><img src="./img/screenshot-1.png" alt="Kanji Sensei kanji writing screenshot" /></a>
-                    </figure>
-                    <figure>
-                        <a href="./img/screenshot-2.png"><img src="./img/screenshot-2.png" alt="Kanji Sensei kanji reading screenshot" /></a>
-                    </figure>
-                    <figure>
-                        <a href="./img/screenshot-3.png"><img src="./img/screenshot-3.png" alt="Kanji Sensei kanji meanings screenshot" /></a>
-                    </figure>
-                </div>
-                <div class="disclaimer">
-                    <p>
-                        ℹ️ Kanji Sensei is currently available for iOS devices only. Moreover, it's a pre-beta version
-                        of the app and thus some features in the roadmap are still missing. If you'd like to contribute
-                        to its development, please <a href="#contact">drop me a line</a>.
-                    </p>
-                </div>
-            </section>
-            <section id="download" class="download-section">
-                <h2>Download</h2>
-                <h3>Start testing with TestFlight</h3>
-                <div class="download-testflight">
-                    <img src="./img/testflight-icon.png" alt="Testflight icon" />
-                    <p>
-                        Kanji Sensei is currently in pre-beta version, available for iPhone devices through Apple's
-                        <a href="https://testflight.apple.com/">TestFlight</a>.
-                        You can download and start testing the app using the following link:
-                        <br />
-                        <a href="https://testflight.apple.com/join/h9sBu499">Install through TestFlight</a>
-                    </p>
-                </div>
-            </section>
-            <section id="kai" class="kai-section">
-                <h2>KAI Language School</h2>
-                <p>
-                    Kanji Sensei started as a small, side project to help me study for Japan's KAI Language School kanji
-                    tests during levels 4 and 5. If you're a KAI student like me, you'll find the app specially useful
-                    in a few ways:
-                </p>
-                <ul>
-                    <li>
-                        <p>
-                            The kanji deck that comes with the app follows the content of
-                            <a href="https://www.amazon.co.jp/%E5%A2%97%E8%A3%9C%E6%94%B9%E8%A8%82%E7%89%88-%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%B7%8F%E3%81%BE%E3%81%A8%E3%82%81-N2%E6%BC%A2%E5%AD%97-%E4%BD%90%E3%80%85%E6%9C%A8%E4%BB%81%E5%AD%90/dp/4866394943">日本語総まとめN2</a>,
-                            the book used in KAI to study kanji (at the time of this writing) during levels 4 and 5
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            The deck is configured so that certain kanjis will suggest you practice their writing. This
-                            is based on KAI's kanji materials around which kanjis' writing to learn for the exams,
-                            making it a great tool to study
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Likewise, at the end of every deck, Kanji Sensei offers a little kanji meaning quizz
-                            following once again KAI's kanji tests material
-                        </p>
-                    </li>
-                    <li>
-                        You have the chance to suggest improvements based on your experience at KAI should you think of
-                        anything useful to add to the app during your tenure. To do so, please check the
-                        <a href="#faq-how-contribute">How can I contribute to Kanji Sensei?</a> FAQ section.
-                    </li>
-                </ul>
-                <img class="" src="./img/go-kanji-practice.jpg" />
-                <p>
-                    I hope this app helps you with your kanji studying as much as it's helped me, and that, together,
-                    we can make it improve little by little. To do so, you can <a href="#download">start testing</a>
-                    today.
-                </p>
-                <div class="disclaimer">
-                    <p>
-                        ℹ️ As this is a pre-beta version of the app, there could be some inaccuracies or straight out
-                        wrong information. Much of it comes from open sourced datasets, and I'll keep striving to
-                        gather together the best I can find. If you catch any of that or, otherwise, you come up with
-                        ideas to improve the app, please <a href="#contact">drop me a line</a>.
-                    </p>
-                </div>
-            </section>
-            <section id="faq" class="faq-section">
-                <h2>FAQ</h2>
-                <h3 id="faq-why-kanji-sensei">
-                    <a href="#faq-why-kanji-sensei">Why Kanji Sensei over Anki or Quizzlet?</a>
-                </h3>
-                <p>
-                    If you're anything like me, you want your kanji studied anywhere (train commute anyone?),
-                    with the ability to not only practice reading but also writing, while learning not only the shape of
-                    the kanji but also the right stroke order. All of that out of the box, without having to find,
-                    download, and configure your decks. Moreover, the decks already come with their English translation,
-                    so that they're ready for you to start studying right away.
-                </p>
-                <h3 id="faq-why-for-kai-students">
-                    <a href="#faq-why-for-kai-students">Why is it ideal for KAI Language School students?</a>
-                </h3>
-                <p>
-                    As of this writing, I've been both developing <strong>and</strong> using Kanji Sensei for and with
-                    the content studied at KAI. You'll find decks developed to suit KAI's studying materials and exams.
-                    If you're a KAI student, the app in its current form is specifically well suited for you. You can
-                    check the details <a href="#kai">in this section</a>.
-                </p>
-                <h3 id="faq-is-kai-app">
-                    <a href="#faq-is-kai-app">Is this app from KAI Language School?</a>
-                </h3>
-                <p>
-                    No, Kanji Sensei is an independent app developed during my tenure at KAI, but there's no other
-                    relationship between the app and the school. The app doesn't collect or share any information with
-                    the school, and it doesn't represent KAI in any way.
-                </p>
-                <h3 id="faq-available-android">
-                    <a href="#faq-available-android">Will the app be available for Android devices?</a>
-                </h3>
-                <p>
-                    At the time of this writing, only the iOS version of the app has been thoroughly tested, but an
-                    Android version is on the way. If you're using an Android device and are interested in testing the
-                    app, please <a href="#contact">drop me a line</a>.
-                </p>
-                <h3 id="faq-how-contribute">
-                    <a href="#faq-how-contribute">How can I contribute to Kanji Sensei?</a>
-                </h3>
-                <p>
-                    Right now the app is in pre-beta version, and the best way to contribute is by using it, noting down
-                    any bugs or annoyances, and suggest any features or improvements. If you want to do more, feel free
-                    to <a href="#contact">contact</a> me.
-                </p>
-            </section>
-            <section id="contact" class="contact-section">
-                <h2>Contact</h2>
-                <p>
-                    Please, send me an email at
-                    <a href="mailto:&#115;&#117;&#103;&#111;&#105;&#107;&#097;&#110;&#106;&#105;&#115;&#101;&#110;&#115;&#101;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#117;&#103;&#111;&#105;&#107;&#097;&#110;&#106;&#105;&#115;&#101;&#110;&#115;&#101;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-                    for any matters related to the app.
-                </p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Kanji Sensei. All rights reserved.</p>
-        </footer>
+      <header>
+        <nav>
+          <menu class="main-menu">
+            <li><a class="menu-option" href="">HOME</a> | </li>
+            <li><a class="menu-option" href="#about">ABOUT</a> | </li>
+            <li><a class="menu-option" href="#download">DOWNLOAD</a> | </li>
+            <li><a class="menu-option" href="#kai">KAI</a> | </li>
+            <li><a class="menu-option" href="#faq">FAQ</a> | </li>
+            <li><a class="menu-option" href="./privacy/index.html#privacy">PRIVACY</a> | </li>
+            <li><a class="menu-option" href="#contact">CONTACT</a></li>
+          </menu>
+          <menu id="lang-menu" class="secondary-menu">
+            <li><a id="lang-en" class="lang-option" onclick="updateLanguage('en')">English</a> | </li>
+            <li><a id="lang-sp" class="lang-option" onclick="updateLanguage('sp')">Español</a> | </li>
+            <li><a id="lang-jp" class="lang-option" onclick="updateLanguage('jp')">日本語</a></li>
+          </menu>
+        </nav>
+      </header>
+      <div class="logo"></div>
+      <main>
+        <section id="about" class="about-section">
+          <h2>About</h2>
+          <p>
+            Kanji Sensei is a smartphone app that helps you learn kanji and vocabulary easily. No need to
+            search and download decks online.
+            Kanji sensei offers kanji writing practice with stroke recognition, kanji reading in context (within
+            words), meaning, and kanji extended info out of the box.
+          </p>
+          <div class="about-features">
+            <figure>
+              <img src="./img/section-kakikata.png" alt="Kanji practice feature image" />
+              <figcaption>
+                Practice kanji writing with stroke recognition.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./img/section-yomikata.png" alt="Kanji reading feature image" />
+              <figcaption>
+                Read kanjis within words - in context.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./img/section-imi.png" alt="Kanji info feature image" />
+              <figcaption>
+                Learn about the meaning(s) of kanji, and information about which parts conform it.
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            The app is currently in pre-beta and under heavy development. Please help testing it while learning
+            japanese!
+          </p>
+          <div class="about-screenshots">
+            <figure>
+              <a href="./img/screenshot-1.png"><img src="./img/screenshot-1.png"
+                  alt="Kanji Sensei kanji writing screenshot" /></a>
+            </figure>
+            <figure>
+              <a href="./img/screenshot-2.png"><img src="./img/screenshot-2.png"
+                  alt="Kanji Sensei kanji reading screenshot" /></a>
+            </figure>
+            <figure>
+              <a href="./img/screenshot-3.png"><img src="./img/screenshot-3.png"
+                  alt="Kanji Sensei kanji meanings screenshot" /></a>
+            </figure>
+          </div>
+        </section>
+        <section id="download" class="download-section">
+          <h2>Download</h2>
+          <p>
+            Kanji Sensei is currently in closed beta testing. If you'd like to join the beta test, please check the
+            instructions for your platform of choice below:
+          </p>
+          <h3 id="download-ios">
+            <a href="#download-ios">iOS (iPhone/iPad): Start testing with Testflight</a>
+          </h3>
+          <div class="download-platform">
+            <img src="./img/testflight-icon.png" alt="Testflight icon" />
+            <div class="download-platform-desciption">
+              <p>
+                Kanji Sensei is available to iOS devices (iPhone and iPad) through Apple's
+                <a href="https://testflight.apple.com/">TestFlight</a>.
+                You can download and start testing the app following the instructions below:
+              </p>
+              <ol>
+                <li>
+                  Follow the instructions in <a href="https://testflight.apple.com/join/h9sBu499">TestFlight</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <h3 id="download-android">
+            <a href="#download-android">Android: Start testing with Google Play</a>
+          </h3>
+          <div class="download-platform">
+            <img src="./img/google-play-icon.png" alt="Google Play Store icon" />
+            <div class="download-platform-desciption">
+              <p>
+                Kanji Sensei is available for Android devices through Google Play Store's beta program. To download and
+                start testing Kanji Sensei, follow these instructions:
+              </p>
+              <ol>
+                <li>
+                  Join the Kanji Sensei beta
+                  <a href="https://groups.google.com/g/kanji-sensei-public-beta">Google Group</a>
+                  <span style="color: #c23e35; font-size: 0.8rem;">(required)</span>
+                </li>
+                <li>
+                  Enroll into the beta program and install Kanji Sensei from the
+                  <a href="https://play.google.com/store/apps/details?id=com.sugokusugoi.kanjisensei">
+                    Google Play Store
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section id="kai" class="kai-section">
+          <h2>KAI Language School</h2>
+          <p>
+            Kanji Sensei started as a small, side project to help me study for Japan's KAI Language School kanji
+            tests during levels 4 and 5. If you're a KAI student like me, you'll find the app specially useful
+            in a few ways:
+          </p>
+          <ul>
+            <li>
+              <p>
+                The kanji deck that comes with the app follows the content of
+                <a
+                  href="https://www.amazon.co.jp/%E5%A2%97%E8%A3%9C%E6%94%B9%E8%A8%82%E7%89%88-%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%B7%8F%E3%81%BE%E3%81%A8%E3%82%81-N2%E6%BC%A2%E5%AD%97-%E4%BD%90%E3%80%85%E6%9C%A8%E4%BB%81%E5%AD%90/dp/4866394943">日本語総まとめN2</a>,
+                the book used in KAI to study kanji (at the time of this writing) during levels 4 and 5
+              </p>
+            </li>
+            <li>
+              <p>
+                The deck is configured so that certain kanjis will suggest you practice their writing. This
+                is based on KAI's kanji materials around which kanjis' writing to learn for the exams,
+                making it a great tool to study
+              </p>
+            </li>
+            <li>
+              <p>
+                Likewise, at the end of every deck, Kanji Sensei offers a little kanji meaning quizz
+                following once again KAI's kanji tests material
+              </p>
+            </li>
+            <li>
+              You have the chance to suggest improvements based on your experience at KAI should you think of
+              anything useful to add to the app during your tenure. To do so, please check the
+              <a href="#faq-how-contribute">How can I contribute to Kanji Sensei?</a> FAQ section.
+            </li>
+          </ul>
+          <img class="" src="./img/go-kanji-practice.jpg" />
+          <p>
+            I hope this app helps you with your kanji studying as much as it's helped me, and that, together,
+            we can make it improve little by little. To do so, you can <a href="#download">start testing</a>
+            today.
+          </p>
+          <div class="disclaimer">
+            <p>
+              ℹ️ As this is a pre-beta version of the app, there could be some inaccuracies or straight out
+              wrong information. Much of it comes from open sourced datasets, and I'll keep striving to
+              gather together the best I can find. If you catch any of that or, otherwise, you come up with
+              ideas to improve the app, please <a href="#contact">drop me a line</a>.
+            </p>
+          </div>
+        </section>
+        <section id="faq" class="faq-section">
+          <h2>FAQ</h2>
+          <h3 id="faq-why-kanji-sensei">
+            <a href="#faq-why-kanji-sensei">Why Kanji Sensei over Anki or Quizzlet?</a>
+          </h3>
+          <p>
+            If you're anything like me, you want your kanji studied anywhere (train commute anyone?),
+            with the ability to not only practice reading but also writing, while learning not only the shape of
+            the kanji but also the right stroke order. All of that out of the box, without having to find,
+            download, and configure your decks. Moreover, the decks already come with their English translation,
+            so that they're ready for you to start studying right away.
+          </p>
+          <h3 id="faq-why-for-kai-students">
+            <a href="#faq-why-for-kai-students">Why is it ideal for KAI Language School students?</a>
+          </h3>
+          <p>
+            As of this writing, I've been both developing <strong>and</strong> using Kanji Sensei for and with
+            the content studied at KAI. You'll find decks developed to suit KAI's studying materials and exams.
+            If you're a KAI student, the app in its current form is specifically well suited for you. You can
+            check the details <a href="#kai">in this section</a>.
+          </p>
+          <h3 id="faq-is-kai-app">
+            <a href="#faq-is-kai-app">Is this app from KAI Language School?</a>
+          </h3>
+          <p>
+            No, Kanji Sensei is an independent app developed during my tenure at KAI, but there's no other
+            relationship between the app and the school. The app doesn't collect or share any information with
+            the school, and it doesn't represent KAI in any way.
+          </p>
+          <h3 id="faq-how-contribute">
+            <a href="#faq-how-contribute">How can I contribute to Kanji Sensei?</a>
+          </h3>
+          <p>
+            Right now the app is in pre-beta version, and the best way to contribute is by using it, noting down
+            any bugs or annoyances, and suggest any features or improvements. If you want to do more, feel free
+            to <a href="#contact">contact</a> me.
+          </p>
+        </section>
+        <section id="contact" class="contact-section">
+          <h2>Contact</h2>
+          <p>
+            Please, send me an email at
+            <a
+              href="mailto:&#115;&#117;&#103;&#111;&#105;&#107;&#097;&#110;&#106;&#105;&#115;&#101;&#110;&#115;&#101;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#117;&#103;&#111;&#105;&#107;&#097;&#110;&#106;&#105;&#115;&#101;&#110;&#115;&#101;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+            for any matters related to the app.
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 Kanji Sensei. All rights reserved.</p>
+      </footer>
     </div>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8WT3MVNMC"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-    gtag('config', 'G-S8WT3MVNMC');
+      gtag('config', 'G-S8WT3MVNMC');
     </script>
     <script>
+      updateMainMenu(window.location.hash);
+      updateSubSections(window.location.hash);
+      updateLanguage(getLanguageFromURL());
+
+      window.onhashchange = () => {
         updateMainMenu(window.location.hash);
-        updateLanguage(getLanguageFromURL());
+        updateSubSections(window.location.hash);
+      };
 
-        window.onhashchange = () => {
-            updateMainMenu(window.location.hash);
-        };
+      function getLanguageFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('lang') || 'en'; // Default to English if no language is provided
+      }
 
-        function getLanguageFromURL() {
-            const params = new URLSearchParams(window.location.search);
-            return params.get('lang') || 'en'; // Default to English if no language is provided
-        }
+      function updateMainMenu(hash) {
+        Array
+          .from(document.getElementsByClassName('menu-option'))
+          .forEach(element => {
+            if (element.attributes['href'].value == "#faq" && hash.startsWith("#faq")) {
+              element.style['text-decoration'] = 'underline';
+            } else if (element.attributes['href'].value == "#download" && hash.startsWith("#download")) {
+              element.style['text-decoration'] = 'underline';
+            } else if (element.attributes['href'].value == "#privacy" && hash.endsWith("privacy")) {
+              element.style['text-decoration'] = 'underline';
+            } else if (element.attributes['href'].value == hash) {
+              element.style['text-decoration'] = 'underline';
+            } else {
+              element.style['text-decoration'] = '';
+            }
+          });
+      }
 
-        function updateMainMenu(hash) {
-            Array
-                .from(document.getElementsByClassName('menu-option'))
-                .forEach(element => {
-                    if (element.attributes['href'].value == "#faq" && hash.startsWith("#faq")) {
-                        element.style['text-decoration'] = 'underline';
-                    } else if (element.attributes['href'].value == hash) {
-                        element.style['text-decoration'] = 'underline';
-                    } else {
-                        element.style['text-decoration'] = '';
-                    }
-                });
-        }
+      function updateSubSections(hash) {
+        Array
+          .from(document.getElementsByTagName('h3'))
+          .forEach(element => {
+            if (element.attributes['id'].value == hash.substring(1)) {
+              element.style['text-decoration'] = 'underline';
+            } else {
+              element.style['text-decoration'] = '';
+            }
+          });
+      }
 
-        function updateLanguage(lang) {
-            Array
-                .from(document.getElementsByClassName('lang-option'))
-                .forEach(element => {
-                    if (element.id == `lang-${lang}`) {
-                        element.style['text-decoration'] = 'underline';
-                    } else {
-                        element.style['text-decoration'] = '';
-                    }
-                });
-        }        
+      function updateLanguage(lang) {
+        Array
+          .from(document.getElementsByClassName('lang-option'))
+          .forEach(element => {
+            if (element.id == `lang-${lang}`) {
+              element.style['text-decoration'] = 'underline';
+            } else {
+              element.style['text-decoration'] = '';
+            }
+          });
+      }        
     </script>
   </body>
 </html>

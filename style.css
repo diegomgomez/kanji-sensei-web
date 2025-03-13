@@ -16,12 +16,15 @@ a:hover {
     text-decoration: underline;
 }
 
-p, ul {
+p, ul, ol {
     color: #CCC;
 }
 
-li {
+ul li {
     list-style: disc;
+}
+
+li {
     padding-left: 5px;
 }
 
@@ -93,6 +96,14 @@ section:not(:last-of-type) {
     padding-bottom: 20px;
 }
 
+section {
+    scroll-margin-top: 40px;
+}
+
+section h3 {
+    scroll-margin-top: 50px;
+}
+
 section p {
     text-align: justify;
     padding-left: 10px;
@@ -104,11 +115,19 @@ section p {
     display: block;
 }
 
+.download-section h3 a {
+    color: #FFF;
+}
+
 .faq-section h3 a {
     color: #FFF;
 }
 
 .faq-section h3:hover::after {
+    content: ' #';
+}
+
+.download-section h3:hover::after {
     content: ' #';
 }
 
@@ -152,16 +171,21 @@ figure img {
     font-size: 0.8rem;
 }
 
-.download-testflight {
+.download-platform {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.download-testflight img {
+.download-platform img {
     height: 100px;
     width: 100px;
+}
+
+.download-platform-description {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
