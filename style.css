@@ -174,7 +174,7 @@ figure img {
 .download-platform {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -186,6 +186,10 @@ figure img {
 .download-platform-description {
     display: flex;
     flex-direction: column;
+}
+
+.download-platform-description p {
+    margin: 0px;
 }
 
 footer {
