@@ -3,10 +3,10 @@ body {
     flex: 1;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0px 10px;
     font-family: Arial, sans-serif;
+    font-size: 0.8rem;
     background-color: #000;
     color: #FFF;
     line-height: 1.5;
@@ -36,23 +36,20 @@ li {
 .container {
     display:flex;
     flex-direction: column;
-    min-width: 600px;
     max-width: 930px;
-    width: 80%;
 }
 
 header {
     position: sticky;
     top: 0;
-    overflow: hidden;
-    height: 45px;
+    height: 35px;
     background-color: #000;
     box-shadow: 0px 5px 10px #000;
     margin-bottom: 5px;
 }
 
 header nav {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,10 +75,10 @@ header nav {
 
 .logo {
     border-radius: 10px 10px 0px 0px;
-    max-width: 930px;
-    height: 200px;
+    height: 180px;
     background-image: url('./img/logo.png');
     background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -90,21 +87,21 @@ main {
     flex: 1;
     flex-direction: column;
     justify-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #111;
 }
 
 section:not(:last-of-type) {
     border-bottom: 1px solid #222;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 section {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 30px;
 }
 
 section h3 {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 40px;
 }
 
 section p {
@@ -141,6 +138,14 @@ section p {
     padding-bottom: 10px;
 }
 
+@media (max-width: 600px) {
+    .about-features, .about-screenshots {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 figure {
     flex: 1;
     justify-items: center;
@@ -150,10 +155,10 @@ figure {
 }
 
 figure figcaption {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     color: #CCC;
     margin: 0;
-    padding: 0;
+    padding: 0px 10px;
 }
 
 figure img {
@@ -171,7 +176,7 @@ figure img {
 .disclaimer p {
     margin: 0;
     padding: 10px;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
 }
 
 .download-platform {
@@ -192,7 +197,7 @@ figure img {
 }
 
 .download-platform-description p {
-    margin: 0px;
+    margin: 0;
 }
 
 footer {
@@ -200,8 +205,8 @@ footer {
     flex: 1;
     justify-content: center;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #222;
     border-radius: 0px 0px 10px 10px;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
 }
